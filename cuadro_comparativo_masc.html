@@ -1,0 +1,288 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif}
+.wrap{padding:2rem 1rem 3rem}
+.title-block{text-align:center;margin-bottom:2rem}
+.main-title{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--color-text-primary);letter-spacing:-0.5px;line-height:1.2}
+.main-sub{font-size:0.85rem;color:var(--color-text-secondary);margin-top:0.4rem;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.badge-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:1rem}
+.badge{font-size:11px;font-weight:700;padding:4px 14px;border-radius:20px;letter-spacing:0.5px}
+.b1{background:#ede9fe;color:#5b21b6}.b2{background:#d1fae5;color:#065f46}.b3{background:#fee2e2;color:#991b1b}.b4{background:#fef3c7;color:#92400e}
+
+.tbl-outer{overflow-x:auto;border-radius:16px;border:1px solid var(--color-border-secondary)}
+table{border-collapse:collapse;width:100%;min-width:780px}
+thead tr{background:linear-gradient(135deg,#1e1b4b 0%,#312e81 100%)}
+th{padding:0;text-align:left;vertical-align:top}
+th:first-child{width:130px;min-width:110px}
+.th-cat{padding:1rem 0.75rem;color:#c7d2fe;font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;vertical-align:middle}
+.th-method{padding:0.9rem 1rem}
+.method-icon{font-size:1.3rem;display:block;margin-bottom:4px}
+.method-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;display:block;line-height:1.2}
+.method-tag{font-size:0.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:3px;display:block;opacity:0.75}
+.m1 .method-name{color:#a5b4fc}.m1 .method-tag{color:#818cf8}
+.m2 .method-name{color:#6ee7b7}.m2 .method-tag{color:#34d399}
+.m3 .method-name{color:#fca5a5}.m3 .method-tag{color:#f87171}
+.m4 .method-name{color:#fcd34d}.m4 .method-tag{color:#f59e0b}
+
+tbody tr{border-bottom:1px solid var(--color-border-tertiary)}
+tbody tr:last-child{border-bottom:none}
+tbody tr:nth-child(even){background:var(--color-background-secondary)}
+tbody tr:nth-child(odd){background:var(--color-background-primary)}
+td{padding:0.8rem 1rem;font-size:0.78rem;vertical-align:top;line-height:1.55;color:var(--color-text-primary)}
+
+.cat-cell{background:linear-gradient(180deg,#1e1b4b,#2e1065);color:#c7d2fe;font-size:0.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:0.8rem 0.6rem;vertical-align:middle;text-align:center;line-height:1.4;border-right:1px solid rgba(255,255,255,0.1)}
+.cat-icon{display:block;font-size:1.1rem;margin-bottom:4px}
+
+.pill{display:inline-block;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:10px;margin:2px 1px;letter-spacing:0.3px}
+.p1{background:#ede9fe;color:#5b21b6}.p2{background:#d1fae5;color:#065f46}.p3{background:#fee2e2;color:#991b1b}.p4{background:#fef3c7;color:#92400e}
+
+.step{display:flex;align-items:flex-start;gap:6px;margin:3px 0}
+.step-num{background:#312e81;color:#a5b4fc;font-size:0.6rem;font-weight:700;width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-num.s2{background:#065f46;color:#6ee7b7}
+.step-num.s3{background:#7f1d1d;color:#fca5a5}
+.step-num.s4{background:#78350f;color:#fcd34d}
+
+.actor{display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:8px;margin-top:4px}
+.a1{background:#ede9fe;border:1px solid #c4b5fd}
+.a2{background:#d1fae5;border:1px solid #6ee7b7}
+.a3{background:#fee2e2;border:1px solid #fca5a5}
+.a4{background:#fef3c7;border:1px solid #fcd34d}
+.actor-ico{font-size:1rem}
+.actor-txt{font-size:0.72rem;font-weight:700;line-height:1.3}
+.a1 .actor-txt{color:#5b21b6}.a2 .actor-txt{color:#065f46}.a3 .actor-txt{color:#991b1b}.a4 .actor-txt{color:#92400e}
+
+.footer{text-align:center;margin-top:1.5rem;font-size:0.7rem;color:var(--color-text-secondary)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px}
+.legend{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.8rem}
+.leg-item{display:flex;align-items:center;font-size:0.68rem;color:var(--color-text-secondary)}
+strong{font-weight:700}
+</style>
+<div class="wrap">
+  <div class="title-block">
+    <div class="main-sub">Manual de Fundamentos de la Solución de Conflictos</div>
+    <div class="main-title">Métodos Alternos de Solución de Conflictos</div>
+    <div style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem">Cuadro comparativo — Etapa 3</div>
+    <div class="badge-row">
+      <span class="badge b1">Negociación</span>
+      <span class="badge b2">Mediación</span>
+      <span class="badge b3">Conciliación</span>
+      <span class="badge b4">Arbitraje</span>
+    </div>
+  </div>
+
+  <div class="tbl-outer">
+  <table>
+    <thead>
+      <tr>
+        <th><div class="th-cat">Categoría</div></th>
+        <th><div class="th-method m1">
+          <span class="method-name">Negociación</span>
+          <span class="method-tag">§ 3.2 · Autocomposición</span>
+        </div></th>
+        <th><div class="th-method m2">
+          <span class="method-name">Mediación</span>
+          <span class="method-tag">§ 3.3 · Heterocomposición</span>
+        </div></th>
+        <th><div class="th-method m3">
+          <span class="method-name">Conciliación</span>
+          <span class="method-tag">§ 3.4 · Heterocomposición</span>
+        </div></th>
+        <th><div class="th-method m4">
+          <span class="method-name">Arbitraje</span>
+          <span class="method-tag">§ 3.5 · Heterocomposición</span>
+        </div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- DEFINICIÓN -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">📖</span>Definición</td>
+        <td>Método de resolución más difundido. Proceso de <strong>comunicación dinámico y directo</strong> mediante el cual dos o más partes tratan de resolver sus diferencias e intereses de forma satisfactoria. Es simple y abierto; las partes establecen sus propias reglas y términos.</td>
+        <td>Procedimiento <strong>flexible y no obligatorio</strong>. Facilita la negociación entre las partes mediante un tercero neutral, con el objetivo de encontrar opciones y llegar a un acuerdo mutuo. Su proceso es ágil, dinámico e interactivo.</td>
+        <td>Medio de solución de conflictos mediante la <strong>intervención de un tercero imparcial y neutral</strong>. Se define doctrinalmente como un acuerdo entre las partes para evitar litigios o poner fin a uno en curso. El conciliador propone soluciones específicas.</td>
+        <td>Método más conocido y utilizado a nivel <strong>nacional e internacional</strong>. Las partes convienen en someter sus diferencias a un tercero o tribunal arbitral. La decisión (laudo) debe ser aceptada como arreglo final. Se asemeja al proceso jurisdiccional con mayores beneficios.</td>
+      </tr>
+      <!-- CLASES -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">🗂️</span>Clases</td>
+        <td>
+          <span class="pill p1">Autocompositiva</span>
+          <span class="pill p1">Extrajudicial</span>
+          <span class="pill p1">Privada</span><br><br>
+          Según distribución vs. integración:<br>
+          <span class="pill p1">Distributiva (suma cero)</span>
+          <span class="pill p1">Integrativa / colaborativa</span>
+        </td>
+        <td>
+          <span class="pill p2">De pares</span>
+          <span class="pill p2">Laboral / Organizacional</span>
+          <span class="pill p2">Familiar</span>
+          <span class="pill p2">Comunitaria</span>
+        </td>
+        <td>Según materia conciliable:<br>
+          <span class="pill p3">Civil</span>
+          <span class="pill p3">Laboral</span>
+          <span class="pill p3">Comercial</span>
+          <span class="pill p3">Familiar</span><br><br>
+          Según momento:<br>
+          <span class="pill p3">Prejudicial</span>
+          <span class="pill p3">Extrajudicial</span>
+        </td>
+        <td>
+          <span class="pill p4">Derecho público</span>
+          <span class="pill p4">Derecho privado</span>
+          <span class="pill p4">Interno</span>
+          <span class="pill p4">Internacional</span>
+          <span class="pill p4">Comercial</span>
+          <span class="pill p4">Civil</span>
+          <span class="pill p4">Propiedad Intelectual (OMPI)</span>
+        </td>
+      </tr>
+      <!-- TIPOS -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">🔀</span>Tipos</td>
+        <td>Tipos de negociador:<br>
+          <span class="pill p1">Evasivo</span>
+          <span class="pill p1">Contencioso / Competitivo</span>
+          <span class="pill p1">Adaptativo / Ceder</span>
+          <span class="pill p1">Cooperativo / Colaborativo</span>
+        </td>
+        <td>Tipos de mediador:<br>
+          <span class="pill p2">Independiente (modelo norteamericano)</span>
+          <span class="pill p2">De redes (modelos no occidentales)</span>
+          <span class="pill p2">Administrativo y de gestión</span>
+          <span class="pill p2">De intereses</span>
+        </td>
+        <td>
+          <span class="pill p3">Estricto derecho</span>
+          <span class="pill p3">Equidad / amigable</span><br><br>
+          El conciliador puede ser:<br>
+          <span class="pill p3">Perito en la materia</span>
+          <span class="pill p3">Profesional MASC</span>
+        </td>
+        <td>
+          <span class="pill p4">Estricto derecho</span> — sigue reglas establecidas (ley, tratado, institución).<br><br>
+          <span class="pill p4">Equidad / amigable composición</span> — basado en Principios Generales de Derecho, buena fe y equidad.
+        </td>
+      </tr>
+      <!-- CARACTERÍSTICAS -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">✅</span>Características</td>
+        <td>
+          <div class="step"><div class="step-num">a</div><div>No implica intervención de un tercero</div></div>
+          <div class="step"><div class="step-num">b</div><div>Las partes son las únicas que intervienen (salvo representantes legales)</div></div>
+          <div class="step"><div class="step-num">c</div><div>Proceso extrajudicial o de orden privado</div></div>
+          <div class="step"><div class="step-num">d</div><div>Decisión tomada de común acuerdo por las partes</div></div>
+          <div class="step"><div class="step-num">e</div><div>Carácter privado; incumplimiento sin sanción legal</div></div>
+          <div class="step"><div class="step-num">f</div><div>Buen negociador: pensamiento rápido, buena expresión, análisis, imparcialidad, paciencia, empatía, tacto y buen humor</div></div>
+        </td>
+        <td>
+          <div class="step"><div class="step-num s2">a</div><div>Proceso ágil, dinámico e interactivo</div></div>
+          <div class="step"><div class="step-num s2">b</div><div>Reglas sencillas definidas por las partes</div></div>
+          <div class="step"><div class="step-num s2">c</div><div>La comunicación es su principal ventaja</div></div>
+          <div class="step"><div class="step-num s2">d</div><div>Sin efectos obligatorios para las partes</div></div>
+          <div class="step"><div class="step-num s2">e</div><div>El mediador: neutral, elegido por las partes, no impone soluciones, escucha intereses, construye puentes de comunicación</div></div>
+        </td>
+        <td>
+          <div class="step"><div class="step-num s3">a</div><div><strong>Neutral e imparcial</strong> en todas las etapas</div></div>
+          <div class="step"><div class="step-num s3">b</div><div>Es un <strong>tercero</strong> sin relación con las partes</div></div>
+          <div class="step"><div class="step-num s3">c</div><div><strong>Conocedor, orientador y dirigente</strong> del conflicto</div></div>
+          <div class="step"><div class="step-num s3">d</div><div><strong>Experto</strong> con conocimientos teóricos y prácticos sobre manejo interpersonal</div></div>
+          <div class="step"><div class="step-num s3">e</div><div>No solo resuelve litigios, también los previene</div></div>
+        </td>
+        <td>
+          <div class="step"><div class="step-num s4">1</div><div><strong>Imparcialidad:</strong> sin prevención a favor o en contra de ninguna parte o cosa</div></div>
+          <div class="step"><div class="step-num s4">2</div><div><strong>Independencia:</strong> puede rechazar nombramiento si existen causas de recusación</div></div>
+          <div class="step"><div class="step-num s4">3</div><div><strong>Neutralidad:</strong> posición equidistante entre las partes antes de ser designado</div></div>
+          <div class="step"><div class="step-num s4">4</div><div>Flexibilidad, privacidad, celeridad e irrevocabilidad de la decisión</div></div>
+        </td>
+      </tr>
+      <!-- MODELOS -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">🏛️</span>Modelos</td>
+        <td>
+          <strong>Distributivo:</strong> recursos limitados, suma cero, un bando gana y el otro pierde.<br><br>
+          <strong>Integrativo / Colaborativo:</strong> se busca beneficio mutuo, se trabaja para cumplir objetivos de ambas partes; mente abierta y creatividad.
+        </td>
+        <td>
+          <span class="pill p2">Modelo de Harvard</span> — mediación asistida por tercero; colaborativa; centrada en satisfacción de intereses.<br><br>
+          <span class="pill p2">Modelo Circular Narrativo</span> — usa la narración de personas; comunicación e interacción; etapas definidas.<br><br>
+          <span class="pill p2">Modelo Transformativo</span> — comunicación y relaciones interpersonales; fomenta el crecimiento moral y el reconocimiento de cada persona.
+        </td>
+        <td>No se distinguen modelos formales en el texto. El proceso conciliatorio es <strong>lineal pero puede tornarse circular</strong>, ya que el conciliador puede retornar a una fase anterior.<br><br>Aplica en materia: civil, laboral, comercial y familiar.</td>
+        <td>
+          <span class="pill p4">Arbitraje de propiedad intelectual (OMPI):</span> marcas, patentes, derechos de autor, secretos industriales.<br><br>
+          <span class="pill p4">Arbitraje público internacional:</span> entre Estados como entidades independientes.<br><br>
+          <span class="pill p4">Arbitraje privado:</span> individuos, entre éstos y Estados no soberanos, o con sector público.
+        </td>
+      </tr>
+      <!-- ETAPAS -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">🪜</span>Etapas / Proceso</td>
+        <td>El procedimiento es <strong>simple y abierto</strong>; no se describen etapas formales fijas. Las partes son libres de establecer reglas y términos. El proceso se adapta a la situación: puede contener momentos colaborativos y competitivos según las circunstancias.</td>
+        <td>Etapas del <strong>Modelo Circular Narrativo:</strong><br>
+          <div class="step"><div class="step-num s2">1</div><div>Aumentar las diferencias</div></div>
+          <div class="step"><div class="step-num s2">2</div><div>Legitimar a las personas</div></div>
+          <div class="step"><div class="step-num s2">3</div><div>Cambiar el significado</div></div>
+          <div class="step"><div class="step-num s2">4</div><div>Creación de contextos</div></div>
+        </td>
+        <td>Fases del proceso conciliatorio:<br>
+          <div class="step"><div class="step-num s3">1</div><div>Actos previos / fase pre-conciliatoria</div></div>
+          <div class="step"><div class="step-num s3">2</div><div>Introducción — monólogo del conciliador</div></div>
+          <div class="step"><div class="step-num s3">3</div><div>Discusión de los hechos (pasado)</div></div>
+          <div class="step"><div class="step-num s3">4</div><div>Identificación de problemas (presente)</div></div>
+          <div class="step"><div class="step-num s3">5</div><div>Búsqueda de soluciones (futuro)</div></div>
+          <div class="step"><div class="step-num s3">6</div><div>El acuerdo</div></div>
+          <div class="step"><div class="step-num s3">7</div><div>Seguimiento del caso</div></div>
+        </td>
+        <td>El texto no detalla etapas formales del proceso arbitral. Se establece que:<br><br>
+          <div class="step"><div class="step-num s4">1</div><div>Las partes someten diferencias mediante acuerdo arbitral</div></div>
+          <div class="step"><div class="step-num s4">2</div><div>Se conforma el tribunal arbitral (uno o más árbitros)</div></div>
+          <div class="step"><div class="step-num s4">3</div><div>Se resuelve conforme a normas específicas (derecho o equidad)</div></div>
+          <div class="step"><div class="step-num s4">4</div><div>Se emite el laudo arbitral (irrevocable)</div></div>
+        </td>
+      </tr>
+      <!-- QUIÉN CUMPLE LA FUNCIÓN -->
+      <tr>
+        <td class="cat-cell"><span class="cat-icon">👤</span>Quién cumple la función</td>
+        <td>
+          <div class="actor a1">
+            <span class="actor-ico">🤝</span>
+            <div class="actor-txt">Las propias partes en conflicto (y/o sus representantes legales). No interviene ningún tercero. El negociador debe ser: rápido, empático, imparcial, paciente y con buen humor.</div>
+          </div>
+        </td>
+        <td>
+          <div class="actor a2">
+            <span class="actor-ico">🧑‍⚖️</span>
+            <div class="actor-txt">El <strong>Mediador</strong> — tercero neutral elegido por las partes o por un tercero. No impone soluciones. Facilita, escucha y construye puentes. Puede ser: independiente, de redes, administrativo o de intereses.</div>
+          </div>
+        </td>
+        <td>
+          <div class="actor a3">
+            <span class="actor-ico">⚖️</span>
+            <div class="actor-txt">El <strong>Conciliador</strong> — tercero neutral, imparcial y experto. Conoce, orienta y dirige el conflicto. Propone soluciones específicas. Debe ser perito en la materia del conflicto. Ejemplo: terapeuta de parejas.</div>
+          </div>
+        </td>
+        <td>
+          <div class="actor a4">
+            <span class="actor-ico">🔨</span>
+            <div class="actor-txt">El <strong>Árbitro</strong> o <strong>Tribunal Arbitral</strong> — imparcial, independiente y neutral. Posición equidistante entre las partes. Auxilia al proceso y su decisión (laudo) es obligatoria e irrevocable.</div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="footer">
+    <div class="legend">
+      <span class="leg-item"><span class="dot" style="background:#5b21b6"></span>Negociación — Autocomposición</span>
+      <span class="leg-item"><span class="dot" style="background:#065f46"></span>Mediación — Heterocomposición</span>
+      <span class="leg-item"><span class="dot" style="background:#991b1b"></span>Conciliación — Heterocomposición</span>
+      <span class="leg-item"><span class="dot" style="background:#92400e"></span>Arbitraje — Heterocomposición</span>
+    </div>
+    <div style="margin-top:0.7rem">Fuente: Manual de Fundamentos de la Solución de Conflictos · Natarén, González y Witker (2016)</div>
+  </div>
+</div>
